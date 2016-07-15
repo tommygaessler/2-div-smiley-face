@@ -26,6 +26,12 @@ div:not(.mouth):before {
 div:not(.mouth):after {
   left: 40px;
 }
+div:not(.mouth) + .mouth {
+  transition: 333ms all ease-in-out;
+}
+div:not(.mouth):hover + .mouth {
+  border-bottom-width: 30px;
+}
 
 div.mouth {
   background-color: yellow;
