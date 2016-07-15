@@ -33,7 +33,7 @@ div.mouth {
   width: 40px;
   border-radius: 50%;
   border-bottom: 10px solid black;
-  position: absolute;
-  top: 90px;
-  left: 377px;
+  position: relative;
+  margin: auto;
+  bottom: 105px;
 }
