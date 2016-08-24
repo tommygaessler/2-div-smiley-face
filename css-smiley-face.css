@@ -1,4 +1,4 @@
-div:not(.mouth) {
+div:first-of-type {
   padding: 40px;
   background-color: yellow;
   width: 100px;
@@ -8,7 +8,7 @@ div:not(.mouth) {
   border: 3px solid black;
   position: relative;
 }
-div:not(.mouth):before, div:not(.mouth):after {
+div:first-of-type:before, div:first-of-type:after {
   content: '';
   padding: 10px;
   background-color: black;
@@ -20,20 +20,20 @@ div:not(.mouth):before, div:not(.mouth):after {
   border-radius: 50%;
   display: inline-block;
 }
-div:not(.mouth):before {
+div:first-of-type:before {
   right: 40px;
 }
-div:not(.mouth):after {
+div:first-of-type:after {
   left: 40px;
 }
-div:not(.mouth) + .mouth {
+div:first-of-type + div:last-of-type {
   transition: 333ms all ease-in-out;
 }
-div:not(.mouth):hover + .mouth {
+div:first-of-type:hover + div:last-of-type {
   border-bottom-width: 30px;
 }
 
-div.mouth {
+div:last-of-type {
   background-color: yellow;
   padding: 30px;
   width: 40px;
